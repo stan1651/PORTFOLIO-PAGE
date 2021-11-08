@@ -1,19 +1,16 @@
-*,
-*::before,
-*::after {
+*{
     box-sizing: border-box;
+    
 }
+@media screen {min-width: 800px} 
 
-@media screen {min-width: 800px) {
 
-}
 
 body{
     background-color: rgb(216, 247, 247);
     color: rgb(43, 58, 55);
     margin: 0;
-    font-family: monospace;
-    font-size: 1rem;
+    
     line-height: 1.6;
     border-left: 13px groove rgba(28,110,164,0.61);
     padding-right: 25;
@@ -21,61 +18,11 @@ body{
 }
 img{
     display: block;
-    max-width: 100%;
-}
-strong{
-    font-weight:bold;
-}
-h1,
-h2,
-h3{
-    line-height: 1.1;
-    margin: 0;   
-}
-h1{font-size: 60px;
-}
-h2{font-size: 45px;
-}
-h3{font: size 30px;
-}
-.section-title-intro{
-    text-align: center;
-
-
-
-}
-.subtitle{
-    text-align: center;
-}
-.subtitle, .about-me, .my-work-sub{
-    margin: 0;
-    font-size: 30px;
     
-}
-.nav {
-    background-color: rgb(105, 101, 101);
-}
-.nav-ul{
-    float: right;
-    color: rgb(238, 151, 20);
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: ;
-    font-size: 40px;
-    font-family: monospace;
-    font-weight: bold;
-    border-left: 21px groove rgb(238, 151, 20);
-
-}    
-.nav-link{
-    color: rgb(27, 122, 113);
-}
-.button:hover {
-    background-color: wheat;
-    color:white;
+    max-width: 200%;
 }
 .portfolio{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     
 }
@@ -85,15 +32,4 @@ h3{font: size 30px;
 .portfolio-image:hover{
     transform: scale(1.08);
     opacity: .80;
-}
-.title-about-me{
-grid-area: auto;
-}
-.contact{
-    color: rgb(238, 151, 20);
-    font-size: 30px;
-    font-style:normal;
-    font-family: monospace; 
-    grid-row: 2;
-
-}
+};
